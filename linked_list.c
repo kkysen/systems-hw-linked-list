@@ -49,7 +49,10 @@ char *list_to_string(const struct node *list) {
 }
 
 void print_list(const struct node *list) {
-    printf("%s\n", list_to_string(list));
+    char *const s = list_to_string(list);
+    printf("%s\n", s);
+    free(s);
+    // simple, multiline version
 //    for (;; list = list->next) {
 //        printf("%d\n", list->i);
 //        if (list->next == NULL) {
