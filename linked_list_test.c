@@ -43,4 +43,5 @@ void test_fibonacci() {
 int main() {
     test_range();
     test_fibonacci();
+    return 0;
 }
